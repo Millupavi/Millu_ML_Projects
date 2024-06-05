@@ -1,0 +1,90 @@
+Water Quality Dataset
+Source: Kaggle
+This dataset contains information about water quality features and potability.
+It consists of 3276 entries with 10 columns:
+
+pH: pH of the water (measured in pH units).
+Hardness: Hardness of the water (measured in mg/L).
+Solids: Total dissolved solids in the water (measured in ppm).
+Chloramines: Amount of chloramines in the water (measured in ppm).
+Sulfate: Amount of sulfate in the water (measured in mg/L).
+Conductivity: Conductivity of the water (measured in μS/cm).
+Organic_carbon: Amount of organic carbon in the water (measured in ppm).
+Trihalomethanes: Amount of trihalomethanes in the water (measured in μg/L).
+Turbidity: Turbidity of the water (measured in NTU).
+Potability: Potability of the water (1 indicates potable, 0 indicates non-potable).
+
+Target Variable:
+Potability: Potability of the water (1 indicates potable, 0 indicates non-potable).
+
+Models Used:
+
+Logistic Regression
+Results:
+Mean Absolute Error: 0.37195
+Mean Squared Error: 0.37195
+Root Mean Squared Error: 0.60988
+Accuracy: 0.62805
+Interpretation: The logistic regression model achieved an accuracy of 62.81%.
+The mean absolute error, mean squared error, and root mean squared error are 0.37195,
+indicating the average magnitude of errors in predictions.
+
+Decision Tree Classifier
+Results:
+
+Mean Absolute Error: 0.36433
+Mean Squared Error: 0.36433
+Root Mean Squared Error: 0.60360
+Accuracy: 0.63567
+
+Random Forest Classifier
+Results:
+
+Mean Absolute Error: 0.32012
+Mean Squared Error: 0.32012
+Root Mean Squared Error: 0.56579
+Accuracy: 0.67988
+
+Naive Bayes Classifier
+Results:
+
+Mean Absolute Error: 0.36890
+Mean Squared Error: 0.36890
+Root Mean Squared Error: 0.60737
+Accuracy: 0.63110
+
+Support Vector Machine Classifier
+Results:
+
+Mean Absolute Error: 0.30488
+Mean Squared Error: 0.30488
+Root Mean Squared Error: 0.55216
+Accuracy: 0.69512
+
+Gradient Boosting Classifier
+Results:
+
+Mean Absolute Error: 0.34146
+Mean Squared Error: 0.34146
+Root Mean Squared Error: 0.58435
+Accuracy: 0.65854
+
+XGBoost Classifier
+Results:
+
+Mean Absolute Error: 0.34451
+Mean Squared Error: 0.34451
+Root Mean Squared Error: 0.58695
+Accuracy: 0.65549
+
+Conclusion:
+The Support Vector Machines (SVM) model performs the best among the compared algorithms,
+achieving the highest accuracy of 69.51%. Random Forests also demonstrate competitive performance
+with an accuracy of 67.99%. Additionally, both Gradient Boosting Machines (GBM) and XGBoost models
+exhibit promising accuracy rates of 65.85% and 65.55%, respectively. These models also demonstrate
+lower mean absolute error and root mean squared error compared to Decision Trees, suggesting better
+predictive performance.
+
+Therefore, for this dataset, SVM and Random Forests appear to be the most promising algorithms for
+predicting water potability, followed closely by GBM and XGBoost.
+
